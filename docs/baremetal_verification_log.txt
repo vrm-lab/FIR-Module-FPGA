@@ -1,0 +1,141 @@
+****** Xilinx hw_server v2024.1.0
+
+  **** Build date : Mar  6 2024 at 20:50:54
+
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+
+INFO: hw_server application started
+
+INFO: Use Ctrl-C to exit hw_server application
+
+
+
+
+INFO: To connect to this hw_server instance use url: TCP:127.0.0.1:3121
+
+
+
+
+hsi::open_hw_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 301.961 ; gain = 9.465
+100%    7MB   1.7MB/s  00:04    
+
+xsdb% Info: Cortex-A53 #0 (target 10) Stopped at 0xffff0000 (Reset Catch)
+100%    7MB   1.7MB/s  00:04    
+Info: Cortex-A53 #0 (target 10) Stopped at 0xffff0000 (Reset Catch)
+Downloading Program -- F:/proyek_vitis/platform_fir_kria/export/platform_fir_kria/sw/boot/fsbl.elf
+        section, .text: 0xfffc0000 - 0xfffcbdbf
+        section, .note.gnu.build-id: 0xfffcbdc0 - 0xfffcbde3
+        section, .init: 0xfffcbe00 - 0xfffcbe33
+        section, .fini: 0xfffcbe40 - 0xfffcbe73
+        section, .rodata: 0xfffcbe80 - 0xfffcc737
+        section, .sys_cfg_data: 0xfffcc740 - 0xfffcce1f
+        section, .mmu_tbl0: 0xfffcd000 - 0xfffcd00f
+        section, .mmu_tbl1: 0xfffce000 - 0xfffcffff
+        section, .mmu_tbl2: 0xfffd0000 - 0xfffd3fff
+        section, .data: 0xfffd4000 - 0xfffd51d7
+        section, .init_array: 0xfffd5200 - 0xfffd520f
+        section, .fini_array: 0xfffd5240 - 0xfffd5247
+        section, .sbss: 0xfffd5248 - 0xfffd527f
+        section, .bss: 0xfffd5280 - 0xfffd69ff
+        section, .heap: 0xfffd6a00 - 0xfffd6dff
+        section, .stack: 0xfffd6e00 - 0xfffd8dff
+        section, .drvcfg_sec: 0xfffd8e00 - 0xfffd8fdf
+        section, .dup_data: 0xfffd9000 - 0xfffda1d7
+        section, .handoff_params: 0xfffe9e00 - 0xfffe9e87
+        section, .bitstream_buffer: 0xffff0040 - 0xfffffc3f
+100%    0MB   0.2MB/s  00:00    
+Setting PC to Program Start Address 0xfffc0000
+Successfully downloaded F:/proyek_vitis/platform_fir_kria/export/platform_fir_kria/sw/boot/fsbl.elf
+Info: Breakpoint 10 status:
+   target 10: {Address: 0xfffc0c90 Type: Hardware}
+xsdb% Info: Cortex-A53 #0 (target 10) Running
+Info: Cortex-A53 #0 (target 10) Stopped at 0xfffc0c90 (Breakpoint)
+xsdb% xsdb% Info: Cortex-A53 #0 (target 10) Stopped at 0xfffc0000 (Hardware Breakpoint)
+Downloading Program -- F:/proyek_vitis/app_stereo_fir_test/build/app_stereo_fir_test.elf
+        section, .text: 0x00000000 - 0x000027eb
+        section, .init: 0x00002800 - 0x00002833
+        section, .fini: 0x00002840 - 0x00002873
+        section, .note.gnu.build-id: 0x00002874 - 0x00002897
+        section, .rodata: 0x000028a0 - 0x00002c90
+        section, .rodata1: 0x00002c91 - 0x00002cbf
+        section, .sdata2: 0x00002cc0 - 0x00002cbf
+        section, .sbss2: 0x00002cc0 - 0x00002cbf
+        section, .data: 0x00002cc0 - 0x000034f7
+        section, .data1: 0x000034f8 - 0x000034ff
+        section, .ctors: 0x00003500 - 0x000034ff
+        section, .dtors: 0x00003500 - 0x000034ff
+        section, .eh_frame: 0x00003500 - 0x00003503
+        section, .mmu_tbl0: 0x00004000 - 0x0000400f
+        section, .mmu_tbl1: 0x00005000 - 0x00006fff
+        section, .mmu_tbl2: 0x00007000 - 0x0000afff
+        section, .preinit_array: 0x0000b000 - 0x0000afff
+        section, .init_array: 0x0000b000 - 0x0000b007
+        section, .fini_array: 0x0000b008 - 0x0000b047
+        section, .drvcfg_sec: 0x0000b048 - 0x0000b053
+        section, .sdata: 0x0000b054 - 0x0000b07f
+        section, .sbss: 0x0000b080 - 0x0000b07f
+        section, .tdata: 0x0000b080 - 0x0000b07f
+        section, .tbss: 0x0000b080 - 0x0000b07f
+        section, .bss: 0x0000b080 - 0x0000b0ff
+        section, .heap: 0x0000b100 - 0x0000d0ff
+        section, .stack: 0x0000d100 - 0x000100ff
+100%    0MB   0.2MB/s  00:00    
+Setting PC to Program Start Address 0x00000000
+Successfully downloaded F:/proyek_vitis/app_stereo_fir_test/build/app_stereo_fir_test.elf
+Info: Breakpoint 11 status:
+   target 10: {Address: 0x1008 Type: Hardware}
+xsdb% Info: Cortex-A53 #0 (target 10) Stopped at 0x1008 (Breakpoint)
+main() at main.c: 40
+40: {
+Info: Cortex-A53 #0 (target 10) Running
+xsdb% Info: Cortex-A53 #0 (target 10) Stopped at 0x1048 (Breakpoint)
+48:     xil_printf("=== FIR Stereo Hardware Test ===\n\r");
+xsdb% Info: Cortex-A53 #0 (target 10) Running
+xsdb% Info: Cortex-A53 #0 (target 10) Stopped at 0x1064 (Breakpoint)
+52:     xil_printf("=== FIR Stereo Hardware Test (Vitis 2024.1) ===\n\r");
+xsdb% Info: Cortex-A53 #0 (target 10) Running
+xsdb% Info: Cortex-A53 #0 (target 10) Stopped at 0x10a8 (Breakpoint)
+62:     xil_printf("FIR Initialized at Address: 0x%08x\n\r", FIR_BASE_ADDR);
+xsdb% Info: Cortex-A53 #0 (target 10) Running
+xsdb% Info: Cortex-A53 #0 (target 10) Stopped at 0x10b8 (Breakpoint)
+67:     xil_printf("Loading Moving Average Filter (5 Taps)...\n\r");
+xsdb% Info: Cortex-A53 #0 (target 10) Running
+xsdb% Info: Cortex-A53 #0 (target 10) Stopped at 0x10c4 (Breakpoint)
+68:     FIR_LoadConfig(&MyFir, Filter_MovAvg, 5);
+xsdb% Info: Cortex-A53 #0 (target 10) Running
+xsdb% Info: Cortex-A53 #0 (target 10) Stopped at 0x10f0 (Breakpoint)
+72:     xil_printf("Verification -> Wrote: %d, Read: %d ... ", Filter_MovAvg[0], ReadBack);
+xsdb% Info: Cortex-A53 #0 (target 10) Stopped at 0x10f4 (Breakpoint)
+72:     xil_printf("Verification -> Wrote: %d, Read: %d ... ", Filter_MovAvg[0], ReadBack);
+xsdb% Info: Cortex-A53 #0 (target 10) Stopped at 0x10f4 (Breakpoint)
+72:     xil_printf("Verification -> Wrote: %d, Read: %d ... ", Filter_MovAvg[0], ReadBack);
+xsdb% Info: Cortex-A53 #0 (target 10) Running
+xsdb% Info: Cortex-A53 #0 (target 10) Stopped at 0x111c (Breakpoint)
+75:         xil_printf("OK!\n\r");
+xsdb% Info: Cortex-A53 #0 (target 10) Running
+xsdb% Info: Cortex-A53 #0 (target 10) Stopped at 0x1138 (Breakpoint)
+83:     FIR_Enable(&MyFir, 1);
+xsdb% Info: Cortex-A53 #0 (target 10) Running
+xsdb% Info: Cortex-A53 #0 (target 10) Stopped at 0x1148 (Breakpoint)
+84:     xil_printf("Filter ENABLED. Audio should be muffled (Low Pass).\n\r");
+xsdb% Info: Cortex-A53 #0 (target 10) Running
+xsdb% Info: Cortex-A53 #0 (target 10) Stopped at 0x1154 (Breakpoint)
+89:     xil_printf("Waiting before switching to Pass-Through...\n\r");
+xsdb% Info: Cortex-A53 #0 (target 10) Running
+xsdb% Info: Cortex-A53 #0 (target 10) Stopped at 0x1188 (Breakpoint)
+92:     xil_printf("Swapping to Impulse Response (Pass-Through)...\n\r");
+xsdb% Info: Cortex-A53 #0 (target 10) Running
+xsdb% Info: Cortex-A53 #0 (target 10) Stopped at 0x1194 (Breakpoint)
+93:     FIR_LoadConfig(&MyFir, Filter_Impulse, 1);
+xsdb% Info: Cortex-A53 #0 (target 10) Running
+xsdb% Info: Cortex-A53 #0 (target 10) Stopped at 0x11ac (Breakpoint)
+94:     xil_printf("Filter Updated. Audio should be clear.\n\r");
+xsdb% Info: Cortex-A53 #0 (target 10) Running
+xsdb% Info: Cortex-A53 #0 (target 10) Stopped at 0x27e0 (Breakpoint)
+_exit() at _exit.c: 13
+13: {
+xsdb%
