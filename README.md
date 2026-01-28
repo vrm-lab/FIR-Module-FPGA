@@ -141,6 +141,28 @@ are intentionally **out of scope**.
 
 ---
 
+## Design Rationale (Summary)
+
+- The default configuration uses **129 FIR taps** as a practical and
+  representative example.
+  - An odd tap count is commonly used for linear-phase FIR designs.
+  - The FIR core itself is fully parameterizable and not limited to 129 taps.
+
+- FIR coefficients are mapped through an **AXI-Lite memory interface**.
+  - Each tap occupies one 32-bit AXI-Lite word.
+  - The current address width safely supports up to **256 taps**.
+  - Designs requiring more than 256 taps only need a wider AXI-Lite
+    address bus; no architectural changes are required.
+
+- This repository intentionally does **not** include coefficient generation
+  tools (Python / MATLAB).
+  - The focus is on **hardware architecture and AXI integration**.
+  - FIR coefficient design is application-specific and better handled by
+    external DSP tools.
+  - Users are free to generate and load their own coefficients at runtime.
+
+---
+
 ## Project Status
 
 This repository is provided as a **reference implementation**.
