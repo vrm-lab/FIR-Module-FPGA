@@ -29,15 +29,15 @@ Focus: **clean architecture, deterministic behavior, and hardware–software co-
 ```
 +--------------------+
 | ARM (Bare-metal) |
-| - AXI DMA |
-| - AXI-Lite Ctrl |
+| - AXI DMA        |
+| - AXI-Lite Ctrl  |
 +----------+---------+
 |
 +----------v---------+
 | Stereo FIR AXI IP |
-| - AXI-Stream IN |
-| - FIR Core (L/R) |
-| - AXI-Stream OUT |
+| - AXI-Stream IN   |
+| - FIR Core (L/R)  |
+| - AXI-Stream OUT  |
 +--------------------+
 ```
 
