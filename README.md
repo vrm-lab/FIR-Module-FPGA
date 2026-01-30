@@ -26,7 +26,7 @@ Focus: **clean architecture, deterministic behavior, and hardware–software co-
 ---
 
 ## Architecture Overview
-
+```
 +--------------------+
 | ARM (Bare-metal) |
 | - AXI DMA |
@@ -39,7 +39,7 @@ Focus: **clean architecture, deterministic behavior, and hardware–software co-
 | - FIR Core (L/R) |
 | - AXI-Stream OUT |
 +--------------------+
-
+```
 
 - Left and Right channels are processed **synchronously**
 - Each channel has an independent FIR core
