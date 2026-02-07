@@ -1,4 +1,4 @@
-# Stereo FIR Filter (AXI-Stream) on FPGA
+# FIR Filter (AXI-Stream) on FPGA
 
 This repository provides a **reference design** of a stereo 16-bit
 **Finite Impulse Response (FIR) filter**
